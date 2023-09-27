@@ -5,7 +5,7 @@ click the link to view the result
 
 
 
-Start- to start the Project..open the terminal in command line or vscode and write yarn start
+Start- to start the Project..open the terminal in command line or vscode and write yarn install and after that to start the app yarn start
 
 Some Details:
 
