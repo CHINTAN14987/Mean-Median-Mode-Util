@@ -17,6 +17,9 @@ td {
   border: 1px solid black;
   cursor: pointer;
 }
+td {
+  text-align: center;
+}
 table {
   margin-top: 2rem;
   width: 50rem;
