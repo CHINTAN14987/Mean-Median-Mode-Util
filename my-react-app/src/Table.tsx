@@ -21,7 +21,13 @@ const Table: FC<IProps> = (props) => {
             <tr key={key}>
               <td>{key}</td>
               {Object.keys(data).map((classKey) => (
-                <td key={classKey}>{data[classKey][key]}</td>
+                <td key={classKey}>
+                  {Array.isArray(data[classKey][key]) ? (
+                    <>{(data[classKey][key] as string[]).join(", ")}</>
+                  ) : (
+                    data[classKey][key]
+                  )}
+                </td>
               ))}
             </tr>
           ))}
