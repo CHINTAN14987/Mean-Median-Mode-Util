@@ -37,7 +37,7 @@ export const getItemClass = (param: string) => {
         ? parseFloat(item.Magnesium)
         : item.Magnesium;
 
-    item["Gamma"] = (ash * hue) / magnesium;
+      item["Gamma"] = ((ash * hue) / magnesium).toFixed(2);
 //Below code is used to add new key value pair to a obj, where keys will be Alchols Different classes and its values
 //is an array which can have all Flavinoids & Gamma Values, depending upon the function we are calling
     if (!obj[`Class ${item?.[key]}`]) {
